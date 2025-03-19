@@ -21,14 +21,14 @@ int main (){
 
     /*INFORMAÇÕES DA PRIMEIRA CARTA*/
     printf ("Vamos preencher os dados da 1° Carta! \n");
-    printf ("Informe a letra do Estado: \n");
-    scanf("%c", &estado);
+    printf ("Informe a Inicial do Estado (uma letra de 'A' a 'H'): \n");
+    scanf("%c", estado);
 
     printf ("Informe o código da Carta: \n");
-    scanf("%s", &codigo);
+    scanf("%s", codigo);
 
     printf ("Infomre a Cidade: \n");
-    scanf("%s", &cidade);
+    scanf(" %[^\n]", cidade);
 
     printf ("Informe a população: \n");
     scanf("%d", &populacao);
@@ -46,14 +46,14 @@ int main (){
 
     /*INFORMAÇÕES DA SEGUNDA CARTA*/
     printf ("Vamos preencher os dados da 2° Carta! \n");
-    printf ("Informe a letra do Estado: \n");
-    scanf("%s", &ESTADOS);
+    printf ("Informe a Inicial do Estado (uma letra de 'A' a 'H'): \n");
+    scanf("%s", ESTADOS);
 
     printf ("Informe o código da Carta: \n");
-    scanf("%s", &CODIGOS);
+    scanf("%s", CODIGOS);
 
     printf ("Infomre a Cidade: \n");
-    scanf("%s", &CIDADES);
+    scanf(" %[^\n]", CIDADES);
 
     printf ("Informe a população: \n");
     scanf("%d", &POPULACOES);
@@ -66,6 +66,7 @@ int main (){
 
     printf ("Informe o número de Pontos Turísticos: \n");
     scanf("%d", &TURISTAS);
+    printf ("\n \n");
 
 
     /*IMPRESSÕES DAS CARTAS*/
@@ -74,18 +75,18 @@ int main (){
     printf("Código: %s \n", &codigo);
     printf("Nome da Cidade: %s \n", &cidade);
     printf("População: %d \n", populacao);
-    printf("Área: %.2f km² \n", area);
-    printf("PIB: %.1f \n", pib);
-    printf("Número de Pontos Turísticos: %d \n \n", turistico);
-    printf("\n");
+    printf("Área: %.3f km² \n", area);
+    printf("PIB: %.2f \n", pib);
+    printf("Número de Pontos Turísticos: %d \n", turistico);
+    printf("\n \n");
 
     printf ("Carta 2! \n");
     printf("Estado: %s \n", &ESTADOS);
     printf("Código: %s \n", &CODIGOS);
     printf("Nome da Cidade: %s \n", &CIDADES);
     printf("População: %d \n", POPULACOES);
-    printf("Área: %.2f km² \n", AREAS);
-    printf("PIB: %.1f \n", PIBS);
+    printf("Área: %.3f km² \n", AREAS);
+    printf("PIB: %.2f \n", PIBS);
     printf("Número de Pontos Turísticos: %d \n", TURISTAS);
 
     return 0;
